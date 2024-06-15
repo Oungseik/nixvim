@@ -3,11 +3,11 @@
   imports = [ 
   ./bufferline.nix
   ./catppuccin.nix
+  ./cmp.nix
   ./key-maps.nix
   ./lsp.nix
   ./lualine.nix
   ./neo-tree.nix
-  # ./nvim-cmp.nix
   ./options.nix
   ./treesitter.nix
   ];
