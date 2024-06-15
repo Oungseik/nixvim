@@ -38,6 +38,11 @@
             default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
           };
 
+          # Your extra plugins
+          # extraPlugins = with pkgs.vimPlugins; [
+
+          # ];
+
           packages = {
             # Lets you run `nix run .` to start nixvim
             default = nvim;

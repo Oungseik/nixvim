@@ -8,8 +8,6 @@
     { mode = "n"; key = "<S-h>"; options.silent = true; action = "<cmd>BufferLineCyclePrev<CR>"; }
     { mode = "n"; key = "<S-l>"; options.silent = true; action = "<cmd>BufferLineCycleNext<CR>"; }
 
-
-
     { mode = "n"; key = "<leader>q"; options.silent = true; action = "<cmd>q<CR>"; }
     { mode = "n"; key = "<leader>w"; options.silent = true; action = "<cmd>w<CR>"; }
 
@@ -17,5 +15,9 @@
     { mode = "n"; key = "<C-h>"; options.silent = true; action = "<C-w>h"; }
     { mode = "n"; key = "<C-j>"; options.silent = true; action = "<C-w>j"; }
     { mode = "n"; key = "<C-k>"; options.silent = true; action = "<C-w>k"; }
+
+    # Telescope
+    { mode = "n"; key = "<leader>ff"; options.silent = true; action = "<cmd>Telescope find_files<CR>"; }
+
   ];
 }
