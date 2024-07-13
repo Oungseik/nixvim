@@ -2,6 +2,8 @@
   plugins = {
     bufferline = {
       enable = true;
+      separatorStyle = "slope"; # “slant”, “padded_slant”, “slope”, “padded_slope”, “thick”, “thin”
+
       diagnostics = "nvim_lsp";
       mode = "buffers";
 
