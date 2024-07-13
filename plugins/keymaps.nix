@@ -22,7 +22,7 @@
       key = "<leader>w";
       options.silent = true;
       options.desc = "Save";
-      action = "<cmd>w<CR>";
+      action = "<cmd>noa w<CR>";
     }
 
     {
