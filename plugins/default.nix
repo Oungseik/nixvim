@@ -8,6 +8,7 @@
     ./lualine.nix
     ./markview.nix
     ./neo-tree.nix
+    ./none-ls.nix
     ./options.nix
     ./telescope.nix
     ./toggleterm.nix
