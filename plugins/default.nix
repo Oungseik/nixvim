@@ -6,6 +6,7 @@
     ./keymaps.nix
     ./lsp.nix
     ./lualine.nix
+    ./markview.nix
     ./neo-tree.nix
     ./options.nix
     ./telescope.nix
