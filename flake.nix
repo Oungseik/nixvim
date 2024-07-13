@@ -11,23 +11,18 @@
     };
   };
 
-  outputs =
-    { nixvim, flake-parts, home-manager, ... }@inputs:
+  outputs = { nixvim, flake-parts, home-manager, ... }@inputs:
     flake-parts.lib.mkFlake { inherit inputs; } {
-      systems = [
-        "x86_64-linux"
-        "aarch64-linux"
-        "x86_64-darwin"
-        "aarch64-darwin"
-      ];
+      systems =
+        [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
 
-      perSystem =
-        { pkgs, system, ... }: let
+      perSystem = { pkgs, system, ... }:
+        let
           nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
           nixvimModule = {
             inherit pkgs;
-            module = import ./plugins; 
+            module = import ./plugins;
             extraSpecialArgs = { };
           };
           nvim = nixvim'.makeNixvimWithModule nixvimModule;
@@ -35,7 +30,8 @@
 
           checks = {
             # Run `nix flake check .` to verify that your config is not broken
-            default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
+            default =
+              nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
           };
 
           # extraPlugins = with pkgs.vimPlugins; [
@@ -48,15 +44,13 @@
           };
         };
 
-        flake = { 
-          homeManagerModules = {
-            nixvim = { config, pkgs }: let
-              nixvim' = nixvim.legacyPackages.${config.system};
+      flake = {
+        homeManagerModules = {
+          nixvim = { config, pkgs }:
+            let nixvim' = nixvim.legacyPackages.${config.system};
             in {
 
-              imports = [
-                home-manager.nixosModules.home-manager
-              ];
+              imports = [ home-manager.nixosModules.home-manager ];
 
               home.stateVersion = "23.11";
               programs.neovim = {
@@ -67,8 +61,7 @@
                 };
               };
             };
-          };
         };
-
-  };
+      };
+    };
 }
