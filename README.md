@@ -9,9 +9,7 @@ Heavily work in process.
 
 ## Features
 
-It is able to use as home-manager module and standalone program (Check `nix flake show`).
-
-Use directly with `nix run .`. 
+Use directly with `nix run .`, or use as program in home-manager. 
 
 ## References
 
