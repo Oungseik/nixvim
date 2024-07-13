@@ -1,6 +1,9 @@
 # checkout https://github.com/dc-tec/nixvim/blob/21072b364c6b8627cbb7a360556eadb3f3a8d412/config/plugins/lsp/lsp.nix
 {
-  diagnostics.virtual_lines.only_current_line = true;
+  # diagnostics.virtual_lines.only_current_line = true;
+  diagnostics.virtual_lines = false;
+  diagnostics.virtual_text = true;
+
   plugins = {
     lsp-lines.enable = true;
     # lsp-format.enable = true;
