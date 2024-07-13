@@ -2,7 +2,6 @@
   plugins.comment = {
     enable = true;
 
-    settings.opleader.line = "/";
-    settings.toggler.line = "/";
+    settings.toggler.line = "<leader>/";
   };
 }
