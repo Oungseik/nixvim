@@ -43,25 +43,5 @@
             default = nvim;
           };
         };
-
-      flake = {
-        homeManagerModules = {
-          default = { config, pkgs }:
-            let nixvim' = nixvim.legacyPackages.${config.system};
-            in {
-
-              imports = [ home-manager.nixosModules.home-manager ];
-
-              home.stateVersion = "23.11";
-              programs.neovim = {
-                enable = true;
-                package = nixvim'.makeNixvimWithModule {
-                  inherit pkgs;
-                  module = import ./plugins;
-                };
-              };
-            };
-        };
-      };
     };
 }
