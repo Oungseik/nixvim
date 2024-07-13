@@ -11,7 +11,10 @@
     vim.fn.sign_define("DiagnosticSignInfo", { text = "", texthl = "DiagnosticSignInfo", linehl = "", numhl = "" })
   '';
 
-  clipboard = { providers.wl-copy.enable = true; };
+  clipboard = { 
+      providers.wl-copy.enable = true;
+      providers.xsel.enable = true;
+    };
 
   opts = {
     number = true;
