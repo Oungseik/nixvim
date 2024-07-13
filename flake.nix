@@ -46,7 +46,7 @@
 
       flake = {
         homeManagerModules = {
-          nixvim = { config, pkgs }:
+          default = { config, pkgs }:
             let nixvim' = nixvim.legacyPackages.${config.system};
             in {
 
