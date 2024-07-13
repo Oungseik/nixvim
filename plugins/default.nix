@@ -1,6 +1,8 @@
 {
   imports = [
+    ./autopairs.nix
     ./bufferline.nix
+    ./comment.nix
     ./keymaps.nix
     ./lsp.nix
     ./lualine.nix
