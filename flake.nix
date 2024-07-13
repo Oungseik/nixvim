@@ -53,7 +53,7 @@
               imports = [ home-manager.nixosModules.home-manager ];
 
               home.stateVersion = "23.11";
-              programs.nixvim = {
+              programs.neovim = {
                 enable = true;
                 package = nixvim'.makeNixvimWithModule {
                   inherit pkgs;
