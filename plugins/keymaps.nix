@@ -15,7 +15,7 @@
       key = "<leader>q";
       options.silent = true;
       options.desc = "Quit";
-      action = "<cmd>qall<CR>";
+      action = "<cmd>q<CR>";
     }
     {
       mode = "n";
