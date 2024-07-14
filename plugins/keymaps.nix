@@ -24,7 +24,13 @@
       options.desc = "Save";
       action = "<cmd>noa w<CR>";
     }
-
+    {
+      mode = "n";
+      key = "<leader>h";
+      options.silent = true;
+      options.desc = "No Highlight";
+      action = "<cmd>nohlsearch<CR>";
+    }
     {
       mode = "n";
       key = "<C-l>";
@@ -48,6 +54,14 @@
       key = "<C-k>";
       options.silent = true;
       action = "<C-w>k";
+    }
+
+
+    {
+      mode = "i";
+      key = "<C-l>";
+      options.silent = true;
+      action = "End";
     }
   ];
 }
