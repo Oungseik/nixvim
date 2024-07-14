@@ -61,7 +61,7 @@
       mode = "i";
       key = "<C-l>";
       options.silent = true;
-      action = "End";
+      action = "<End>";
     }
   ];
 }
