@@ -9,7 +9,7 @@ Heavily work in process.
 
 ## Features
 
-Use directly with `nix run .`, or use as program in home-manager. 
+Use directly with `nix run .`, or use as program in home-manager.
 
 ## References
 
