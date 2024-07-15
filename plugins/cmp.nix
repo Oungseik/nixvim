@@ -43,7 +43,9 @@
         ];
 
         window = {
-          completion = { border = "solid"; };
+          completion = {
+            border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
+          };
           documentation = { border = "solid"; };
         };
 
