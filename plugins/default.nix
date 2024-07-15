@@ -2,6 +2,7 @@
   imports = [
     ./autopairs.nix
     ./bufferline.nix
+    ./cmp.nix
     ./comment.nix
     ./keymaps.nix
     ./lsp.nix
@@ -10,6 +11,7 @@
     ./neo-tree.nix
     ./none-ls.nix
     ./options.nix
+    ./schemastore.nix
     ./telescope.nix
     ./toggleterm.nix
     ./treesitter.nix
