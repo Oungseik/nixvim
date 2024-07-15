@@ -31,6 +31,7 @@
     linebreak = true;
     cursorline = true;
     signcolumn = "yes";
+    ignorecase = true;
 
     wrap = false;
 
