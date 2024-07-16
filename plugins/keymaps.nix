@@ -56,12 +56,21 @@
       action = "<C-w>k";
     }
 
+    { mode = "n"; key = "<A-j>"; action = ":m .+1<CR>=="; }
+    { mode = "n"; key = "<A-k>"; action = ":m .-2<CR>=="; }
 
+    # insert mode bindings
     {
       mode = "i";
       key = "<C-l>";
       options.silent = true;
       action = "<End>";
     }
+
+    # visual mode bindings
+    { mode = "v"; key = ">"; action = ">gv"; }
+    { mode = "v"; key = "<"; action = "<gv"; }
+    { mode = "v"; key = "<A-j>"; action = ":m '>+1<CR>gv=gv"; }
+    { mode = "v"; key = "<A-k>"; action = ":m '<-2<CR>gv=gv"; }
   ];
 }

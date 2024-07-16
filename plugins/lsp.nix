@@ -13,9 +13,11 @@
       enable = true;
 
       servers = {
-        rust-analyzer.enable = true;
-        rust-analyzer.installRustc = false;
-        rust-analyzer.installCargo = false;
+        rust-analyzer = {
+          enable = true;
+          installRustc = false;
+          installCargo = false;
+        };
 
         gopls.enable = true;
         lua-ls.enable = true;
@@ -32,22 +34,22 @@
             action = "definition";
             desc = "Goto Definition";
           };
-          # gr = {
-          #   action = "references";
-          #   desc = "Goto References";
-          # };
-          # gD = {
-          #   action = "declaration";
-          #   desc = "Goto Declaration";
-          # };
-          # gI = {
-          #   action = "implementation";
-          #   desc = "Goto Implementation";
-          # };
-          # gT = {
-          #   action = "type_definition";
-          #   desc = "Type Definition";
-          # };
+          "<leader>lR" = {
+            action = "references";
+            desc = "Goto References";
+          };
+          "<leader>ld" = {
+            action = "declaration";
+            desc = "Goto Declaration";
+          };
+          "<leader>li" = {
+            action = "implementation";
+            desc = "Goto Implementation";
+          };
+          "<leader>lt" = {
+            action = "type_definition";
+            desc = "Type Definition";
+          };
           K = {
             action = "hover";
             desc = "Hover";
@@ -107,4 +109,3 @@
     }
   '';
 }
-
