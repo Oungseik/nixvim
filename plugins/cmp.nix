@@ -51,8 +51,8 @@
 
         mapping = {
           "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
-          "<C-j>" = "cmp.mapping.select_next_item()";
-          "<C-k>" = "cmp.mapping.select_prev_item()";
+          "<C-j>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+          "<C-k>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
           "<C-e>" = "cmp.mapping.abort()";
           "<C-b>" = "cmp.mapping.scroll_docs(-4)";
           "<C-f>" = "cmp.mapping.scroll_docs(4)";

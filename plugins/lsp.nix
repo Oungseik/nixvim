@@ -15,8 +15,8 @@
       servers = {
         rust-analyzer = {
           enable = true;
-          installRustc = false;
-          installCargo = false;
+          installRustc = true;
+          installCargo = true;
         };
 
         gopls.enable = true;
