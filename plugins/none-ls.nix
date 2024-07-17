@@ -29,7 +29,7 @@
           disableTsServerFormatter = true;
           withArgs = ''
             {
-              extra_args = { --print-width 100 --trailing-comma all },
+              extra_args = { "--print-width", 100, "--trailing-comma", "all" },
             }
           '';
         };
