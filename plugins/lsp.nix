@@ -108,4 +108,16 @@
       border = _border
     }
   '';
+
+  keymaps = [
+    {
+      mode = [ "n" "v" ];
+      key = "<leader>lq";
+      action = ":lua vim.diagnostic.setloclist()<cr>";
+      options = {
+        silent = true;
+        desc = "Quickfix";
+      };
+    }
+  ];
 }
