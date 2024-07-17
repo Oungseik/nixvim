@@ -1,7 +1,9 @@
 {
-  "ftplugin/markdown.lua" = {
-    opts = {
-      wrap = true;
+  files = {
+    "ftplugin/markdown.lua" = {
+      opts = {
+        wrap = true;
+      };
     };
   };
 }
