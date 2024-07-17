@@ -1,7 +1,7 @@
 {
   plugins.none-ls = {
     enable = true;
-    enableLspFormat = true;
+    enableLspFormat = false;
     settings = {
       updateInInsert = false;
     };
@@ -29,7 +29,7 @@
           disableTsServerFormatter = true;
           withArgs = ''
             {
-              extra_args = {  },
+              extra_args = { --print-width 100 --trailing-comma all },
             }
           '';
         };
