@@ -19,6 +19,10 @@
           installCargo = true;
         };
 
+        pylyzer = {
+          enable = true;
+        };
+
         gopls.enable = true;
         lua-ls.enable = true;
         marksman.enable = true;
