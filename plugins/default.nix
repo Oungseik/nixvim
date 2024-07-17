@@ -5,6 +5,7 @@
     ./cmp.nix
     ./comment.nix
     ./ftplugins.nix
+    ./gitsigns.nix
     ./keymaps.nix
     ./lsp.nix
     ./lualine.nix
