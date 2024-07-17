@@ -4,6 +4,7 @@
     ./bufferline.nix
     ./cmp.nix
     ./comment.nix
+    ./ftplugins.nix
     ./keymaps.nix
     ./lsp.nix
     ./lualine.nix
