@@ -26,7 +26,7 @@
     {
       mode = "n";
       key = "<Leader>pmt";
-      action = ":Markview<CR>";
+      action = ":Markview toggle<CR>";
       options = { silent = true; desc = "+Markdown"; };
     }
   ];
