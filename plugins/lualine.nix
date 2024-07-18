@@ -15,11 +15,16 @@
     extensions = [ "fzf" "neo-tree" ];
     disabledFiletypes = { statusline = [ "startup" "alpha" ]; };
     theme = "catppuccin";
+
     sections = {
-      lualine_a = [{
-        name = "mode";
-        icon = " ";
-      }];
+      lualine_a = [
+        {
+          name = "mode";
+          extraConfig = {
+            icon_only = true;
+          };
+        }
+      ];
       lualine_b = [
         {
           name = "branch";
@@ -36,6 +41,7 @@
           };
         }
       ];
+
       lualine_c = [
         {
           name = "diagnostics";
@@ -49,6 +55,10 @@
             };
           };
         }
+      ];
+
+      # right 
+      lualine_x = [
         {
           name = "filetype";
           extraConfig = {
@@ -62,10 +72,10 @@
         }
         {
           name = "filename";
-          extraConfig = { path = 1; };
+          extraConfig = {
+            path = 1;
+          };
         }
-      ];
-      lualine_x = [
         { name = "navic"; }
         {
           name.__raw = ''
@@ -82,7 +92,10 @@
           '';
         }
       ];
-      lualine_y = [{ name = "progress"; }];
+
+      lualine_y = [
+        { name = "progress"; }
+      ];
       lualine_z = [{ name = "location"; }];
     };
   };

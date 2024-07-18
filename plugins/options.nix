@@ -11,11 +11,11 @@
     vim.fn.sign_define("DiagnosticSignInfo", { text = "", texthl = "DiagnosticSignInfo", linehl = "", numhl = "" })
   '';
 
-  clipboard = { 
-      register = "unnamedplus";
-      providers.wl-copy.enable = true;
-      providers.xsel.enable = true;
-    };
+  clipboard = {
+    register = "unnamedplus";
+    providers.wl-copy.enable = true;
+    providers.xsel.enable = true;
+  };
 
   opts = {
     number = true;
