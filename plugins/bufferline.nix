@@ -23,6 +23,12 @@
   keymaps = [
     {
       mode = "n";
+      key = "<Leader>b";
+      action = "<Nop>";
+      options = { silent = true; desc = "+Buffer"; };
+    }
+    {
+      mode = "n";
       key = "<S-h>";
       options.silent = true;
       action = "<cmd>BufferLineCyclePrev<CR>";

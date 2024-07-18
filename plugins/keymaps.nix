@@ -3,6 +3,13 @@
   keymaps = [
     {
       mode = "n";
+      key = "<Leader>p";
+      action = "<Nop>";
+      options = { silent = true; desc = "+Plugins More"; };
+    }
+
+    {
+      mode = "n";
       key = "<leader>e";
       options.silent = true;
       options.desc = "Explorer";

@@ -15,4 +15,19 @@
   extraConfigLua = ''
     require("markview").setup();
   '';
+
+  keymaps = [
+    {
+      mode = "n";
+      key = "<Leader>pm";
+      action = "<Nop>";
+      options = { silent = true; desc = "+Markdown"; };
+    }
+    {
+      mode = "n";
+      key = "<Leader>pmt";
+      action = ":Markview<CR>";
+      options = { silent = true; desc = "+Markdown"; };
+    }
+  ];
 }

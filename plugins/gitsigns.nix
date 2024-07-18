@@ -14,6 +14,12 @@
 
   keymaps = [
     {
+      mode = "n";
+      key = "<Leader>g";
+      action = "<Nop>";
+      options = { silent = true; desc = "+Git"; };
+    }
+    {
       mode = [ "n" ];
       key = "<leader>gj";
       action = ":Gitsigns nav_hunk next<cr>";

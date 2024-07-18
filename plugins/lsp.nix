@@ -111,6 +111,12 @@
 
   keymaps = [
     {
+      mode = "n";
+      key = "<Leader>l";
+      action = "<Nop>";
+      options = { silent = true; desc = "+LSP"; };
+    }
+    {
       mode = [ "n" "v" ];
       key = "<leader>lq";
       action = ":lua vim.diagnostic.setloclist()<cr>";

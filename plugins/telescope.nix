@@ -29,6 +29,12 @@
   keymaps = [
     {
       mode = "n";
+      key = "<Leader>s";
+      action = "<Nop>";
+      options = { silent = true; desc = "+Search"; };
+    }
+    {
+      mode = "n";
       key = "<leader>f";
       options.silent = true;
       options.desc = "Find File";
