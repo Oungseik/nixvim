@@ -10,7 +10,8 @@
     ./lsp.nix
     ./lualine.nix
     ./markview.nix
-    ./neo-tree.nix
+    # ./neo-tree.nix
+    (import ./nvim-tree.nix { })
     ./none-ls.nix
     ./options.nix
     ./schemastore.nix

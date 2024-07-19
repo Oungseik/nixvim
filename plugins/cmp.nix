@@ -55,8 +55,8 @@
           "<C-j>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
           "<C-k>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
           "<C-e>" = "cmp.mapping.abort()";
-          "<C-b>" = "cmp.mapping.scroll_docs(-4)";
-          "<C-f>" = "cmp.mapping.scroll_docs(4)";
+          "<C-b>" = "cmp.mapping.scroll_docs(-2)";
+          "<C-f>" = "cmp.mapping.scroll_docs(2)";
           "<C-Space>" = "cmp.mapping.complete()";
           "<CR>" = "cmp.mapping.confirm({ select = true })";
           "<S-CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
@@ -66,39 +66,11 @@
 
     cmp-nvim-lsp = { enable = true; }; # lsp
     cmp-buffer = { enable = true; };
-    cmp-path = { enable = true; }; # file system paths
+    cmp-async-path = { enable = true; }; # file system paths
     cmp-cmdline = { enable = false; }; # autocomplete for cmdline
   };
 
   extraConfigLua = ''
-        kind_icons = {
-          Text = "󰊄",
-          Method = "",
-          Function = "󰡱",
-          Constructor = "",
-          Field = "",
-          Variable = "󱀍",
-          Class = "",
-          Interface = "",
-          Module = "󰕳",
-          Property = "",
-          Unit = "",
-          Value = "",
-          Enum = "",
-          Keyword = "",
-          Snippet = "",
-          Color = "",
-          File = "",
-          Reference = "",
-          Folder = "",
-          EnumMember = "",
-          Constant = "",
-          Struct = "",
-          Event = "",
-          Operator = "",
-          TypeParameter = "",
-        } 
-
          local cmp = require'cmp'
 
      -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).

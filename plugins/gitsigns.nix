@@ -63,6 +63,12 @@
     }
     {
       mode = [ "n" ];
+      key = "<leader>gS";
+      action = ":Gitsigns stage_buffer<cr>";
+      options = { silent = true; desc = "Stage Buffer"; };
+    }
+    {
+      mode = [ "n" ];
       key = "<leader>gs";
       action = ":Gitsigns stage_hunk<cr>";
       options = { silent = true; desc = "Stage Hunk"; };
