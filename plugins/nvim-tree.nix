@@ -43,7 +43,7 @@ in
     diagnostics = {
       enable = true;
       showOnDirs = true;
-      showOnOpenDirs = true;
+      showOnOpenDirs = false;
       debounceDelay = 50;
       severity = {
         min = "error";
