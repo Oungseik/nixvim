@@ -1,8 +1,10 @@
 {
   plugins = {
-    cmp-emoji = {
-      enable = true;
-    };
+    cmp-nvim-lsp = { enable = true; }; # lsp
+    cmp-buffer = { enable = true; };
+    cmp-async-path = { enable = true; }; # file system paths
+    cmp-emoji = { enable = false; };
+    cmp-cmdline = { enable = false; }; # autocomplete for cmdline
 
     cmp = {
       enable = true;
@@ -29,7 +31,7 @@
         };
         sources = [
           { name = "nvim_lsp"; }
-          { name = "emoji"; }
+          # { name = "emoji"; }
           {
             name = "buffer"; # text within current buffer
             option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
@@ -63,11 +65,6 @@
         };
       };
     };
-
-    cmp-nvim-lsp = { enable = true; }; # lsp
-    cmp-buffer = { enable = true; };
-    cmp-async-path = { enable = true; }; # file system paths
-    cmp-cmdline = { enable = false; }; # autocomplete for cmdline
   };
 
   extraConfigLua = ''
