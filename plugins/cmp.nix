@@ -1,7 +1,7 @@
 {
   plugins = {
     cmp-nvim-lsp = { enable = true; }; # lsp
-    cmp-buffer = { enable = true; };
+    # cmp-buffer = { enable = true; };
     cmp-async-path = { enable = true; }; # file system paths
     cmp-emoji = { enable = false; };
     cmp-cmdline = { enable = false; }; # autocomplete for cmdline
