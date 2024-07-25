@@ -40,12 +40,12 @@
       action = "<Cmd>ToggleTerm direction=float<CR>";
       options.desc = "Open floating terminal";
     }
-    {
-      mode = "n";
-      key = "<M-3>";
-      action = "<Cmd>execute v:count . 'ToggleTerm'<CR>";
-      options.desc = "Toggle terminal";
-    }
+    # {
+    #   mode = "n";
+    #   key = "<M-3>";
+    #   action = "<Cmd>execute v:count . 'ToggleTerm'<CR>";
+    #   options.desc = "Toggle terminal";
+    # }
     {
       mode = "t";
       key = "<M-3>";
