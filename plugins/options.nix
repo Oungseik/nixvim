@@ -1,4 +1,5 @@
 {
+  plugins.tmux-navigator.enable = true;
   colorschemes.catppuccin = {
     enable = true;
     settings.flavour = "macchiato";
