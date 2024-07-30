@@ -19,12 +19,19 @@
           installCargo = true;
         };
 
+        lua-ls = {
+          enable = true;
+          settings.diagnostic.globals = [ "vim" ];
+        };
+
+        cssls.enable = true;
         gopls.enable = true;
-        lua-ls.enable = true;
         marksman.enable = true;
         nil-ls.enable = true;
         tsserver.enable = true;
         jsonls.enable = true;
+        pyright.enable = true;
+        zls.enable = true;
       };
 
       keymaps = {
