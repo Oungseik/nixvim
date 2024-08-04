@@ -19,15 +19,15 @@
         };
         formatting = {
           fields = [ "abbr" "kind" "menu" ];
-          format = ''
-            function(entry, item)
-              local widths = {
-                abbr = vim.g.cmp_widths and vim.g.cmp_widths.abbr or 40,
-                menu = vim.g.cmp_widths and vim.g.cmp_widths.menu or 30,
-              }
-              return item
-            end,
-          '';
+          # format = ''
+          #   function(entry, item)
+          #     local widths = {
+          #       abbr = vim.g.cmp_widths and vim.g.cmp_widths.abbr or 40,
+          #       menu = vim.g.cmp_widths and vim.g.cmp_widths.menu or 30,
+          #     }
+          #     return item
+          #   end,
+          # '';
         };
         sources = [
           { name = "nvim_lsp"; }
