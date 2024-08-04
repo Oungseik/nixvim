@@ -15,8 +15,12 @@
       servers = {
         rust-analyzer = {
           enable = true;
-          installRustc = true;
-          installCargo = true;
+          installRustc = false;
+          installCargo = false;
+          settings = {
+            diagnostics.enable = true;
+            # diagnostics.experimental.enable = true;
+          };
         };
 
         lua-ls = {

@@ -3,7 +3,7 @@
     enable = true;
     enableLspFormat = false;
     settings = {
-      updateInInsert = false;
+      updateInInsert = true;
     };
     sources = {
       code_actions = {
