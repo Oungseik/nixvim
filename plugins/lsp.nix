@@ -14,38 +14,39 @@
       enable = true;
 
       servers = {
-        rust-analyzer = {
-          enable = true;
-          filetypes = [ "rust" ];
-          installRustc = true;
-          installCargo = true;
-          settings = {
-            diagnostics.enable = true;
-            diagnostics.experimental.enable = true;
-
-            files = {
-              excludeDirs = [
-                ".direnv"
-                "rust/.direnv"
-              ];
-            };
-
-            inlayHints = {
-              bindingModeHints.enable = true;
-              closureStyle = "rust_analyzer";
-              closureReturnTypeHints.enable = "always";
-              discriminantHints.enable = "always";
-              expressionAdjustmentHints.enable = "always";
-              implicitDrops.enable = true;
-              lifetimeElisionHints.enable = "always";
-              rangeExclusiveHints.enable = true;
-            };
-
-            procMacro = {
-              enable = true;
-            };
-          };
-        };
+        # rust-analyzer = {
+        #   enable = true;
+        #   filetypes = [ "rust" ];
+        #   installRustc = true;
+        #   installCargo = true;
+        #   settings = {
+        #     diagnostics.enable = true;
+        #     diagnostics.experimental.enable = false;
+        #     cargo.features = "all";
+        #
+        #     files = {
+        #       excludeDirs = [
+        #         ".direnv"
+        #         "rust/.direnv"
+        #       ];
+        #     };
+        #
+        #     inlayHints = {
+        #       bindingModeHints.enable = true;
+        #       closureStyle = "rust_analyzer";
+        #       closureReturnTypeHints.enable = "always";
+        #       discriminantHints.enable = "always";
+        #       expressionAdjustmentHints.enable = "always";
+        #       implicitDrops.enable = true;
+        #       lifetimeElisionHints.enable = "always";
+        #       rangeExclusiveHints.enable = true;
+        #     };
+        #
+        #     procMacro = {
+        #       enable = true;
+        #     };
+        #   };
+        # };
 
         lua-ls = {
           enable = true;

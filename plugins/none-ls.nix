@@ -1,7 +1,6 @@
 {
   plugins.none-ls = {
     enable = true;
-    enableLspFormat = false;
     settings = {
       updateInInsert = true;
     };
@@ -27,11 +26,10 @@
         prettier = {
           enable = true;
           disableTsServerFormatter = true;
-          settings = ''
-            {
-              extra_args = { "--print-width", 100, "--trailing-comma", "all" },
-            }
-          '';
+          settings = {
+            extra_args = [ "--print-width" 100 "--trailing-comma" "all" ];
+            extra_filetypes = [ "toml" ];
+          };
         };
         stylua.enable = true;
         yamlfmt.enable = true;
