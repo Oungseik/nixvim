@@ -14,7 +14,7 @@
     (import ./nvim-tree.nix { })
     ./none-ls.nix
     ./options.nix
-    ./rustaceanvim.nix
+    # ./rustaceanvim.nix
     ./schemastore.nix
     ./telescope.nix
     ./toggleterm.nix
