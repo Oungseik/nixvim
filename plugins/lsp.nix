@@ -17,12 +17,12 @@
         rust-analyzer = {
           enable = true;
           filetypes = [ "rust" ];
-          installRustc = true;
-          installCargo = true;
+          installRustc = false;
+          installCargo = false;
+          cmd = [ "rust-analyzer" "--log-file" "/tmp/nixvim/0-rust-analyzer.log" ];
           settings = {
-            diagnostics.enable = true;
+            diagnostics.enable = false;
             diagnostics.experimental.enable = false;
-            cargo.features = "all";
 
             files = {
               excludeDirs = [
@@ -38,7 +38,7 @@
               discriminantHints.enable = "always";
               expressionAdjustmentHints.enable = "always";
               implicitDrops.enable = true;
-              lifetimeElisionHints.enable = "always";
+              lifetimeElisionHints.enable = "skip_trivial";
               rangeExclusiveHints.enable = true;
             };
 
