@@ -53,6 +53,7 @@
           settings.diagnostic.globals = [ "vim" ];
         };
 
+        clangd.enable = true;
         cssls.enable = true;
         gopls.enable = true;
         marksman.enable = true;
