@@ -53,13 +53,14 @@
           settings.diagnostic.globals = [ "vim" ];
         };
 
-        clangd.enable = true;
-        cssls.enable = true;
-        gopls.enable = true;
+        svelte.enable = true;
+        # cssls.enable = true;
         marksman.enable = true;
+        clangd.enable = true;
+        gopls.enable = true;
         nil-ls.enable = true;
         tsserver.enable = true;
-        jsonls.enable = true;
+        # jsonls.enable = true;
         pyright.enable = true;
         zls.enable = true;
       };

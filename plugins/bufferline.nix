@@ -2,21 +2,27 @@
   plugins = {
     bufferline = {
       enable = true;
-      separatorStyle = "slope"; # “slant”, “padded_slant”, “slope”, “padded_slope”, “thick”, “thin”
 
-      diagnostics = "nvim_lsp";
-      mode = "buffers";
+      settings.options = {
+        separatorStyle = "slope"; # “slant”, “padded_slant”, “slope”, “padded_slope”, “thick”, “thin”
+        diagnostics = "nvim_lsp";
 
-      closeIcon = " ";
-      bufferCloseIcon = "󰱝 ";
-      modifiedIcon = "";
+        mode = "buffers";
+        closeIcon = " ";
+        bufferCloseIcon = "󰱝 ";
+        modifiedIcon = "";
 
-      offsets = [{
-        filetype = "neo-tree";
-        text = "Neo-tree";
-        highlight = "Directory";
-        text_align = "left";
-      }];
+        offsets = [
+          {
+            filetype = "NvimTree";
+            text = "Explorer";
+            highlight = "Directory";
+            text_align = "left";
+          }
+        ];
+      };
+
+
     };
   };
 
