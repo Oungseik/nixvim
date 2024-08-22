@@ -2,7 +2,7 @@
   plugins.none-ls = {
     enable = true;
     settings = {
-      updateInInsert = true;
+      updateInInsert = false;
     };
     sources = {
       code_actions = {
