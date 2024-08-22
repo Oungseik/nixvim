@@ -7,7 +7,16 @@
   plugins = {
     lsp-lines.enable = true;
     lsp-format.enable = true;
-    lspkind.enable = true;
+    lspkind = {
+      enable = true;
+      symbolMap = {
+        Copilot = "";
+      };
+      extraOptions = {
+        maxwidth = 50;
+        ellipsis_char = "...";
+      };
+    };
     # helm.enable = true;
 
     lsp = {
