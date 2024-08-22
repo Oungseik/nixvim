@@ -4,7 +4,6 @@
     ./cmp.nix
     ./comment.nix
     ./ftplugins.nix
-    ./gitsigns.nix
     ./keymaps.nix
     ./lsp.nix
     ./lualine.nix
@@ -16,6 +15,8 @@
     ./telescope.nix
     ./toggleterm.nix
     ./treesitter.nix
+
+    ./git
     ./utils
   ];
 }
