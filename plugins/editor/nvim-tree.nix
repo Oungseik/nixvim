@@ -1,7 +1,4 @@
 { ... }:
-let
-  icons = import ../lib/icons.nix;
-in
 {
   plugins.nvim-tree = {
     enable = true;
@@ -25,18 +22,6 @@ in
       icons = {
         gitPlacement = "after";
         show = { file = true; folder = true; folderArrow = true; git = false; };
-
-        glyphs = {
-          # git = {
-          #   unstaged = "${icons.git.FileUnstaged}";
-          #   staged = "${icons.git.FileStaged}";
-          #   unmerged = "${icons.git.FileUnmerged}";
-          #   renamed = "${icons.git.FileRenamed}";
-          #   untracked = "${icons.ui.lazy.not_loaded}";
-          #   deleted = "${icons.git.FileDeleted}";
-          #   ignored = "${icons.git.FileIgnored}";
-          # };
-        };
       };
     };
 

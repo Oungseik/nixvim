@@ -13,7 +13,7 @@
 
     globalstatus = true;
     extensions = [ "fzf" "neo-tree" ];
-    disabledFiletypes = { statusline = [ "startup" "alpha" ]; };
+    disabledFiletypes = { statusline = [ "startup" "alpha" "NvimTree" ]; };
     theme = "catppuccin";
 
     sections = {
