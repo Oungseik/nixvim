@@ -1,0 +1,8 @@
+{
+  plugins = {
+    which-key.enable = true;
+    nvim-autopairs.enable = true;
+  };
+
+  imports = [ ./flash.nix ];
+}

@@ -26,7 +26,8 @@
             extraSpecialArgs = { };
           };
           nvim = nixvim'.makeNixvimWithModule nixvimModule;
-        in {
+        in
+        {
 
           checks = {
             # Run `nix flake check .` to verify that your config is not broken
