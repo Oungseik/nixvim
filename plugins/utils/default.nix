@@ -4,5 +4,5 @@
     nvim-autopairs.enable = true;
   };
 
-  imports = [ ./flash.nix ./toggleterm.nix ];
+  imports = [ ./flash.nix ./markview.nix ./toggleterm.nix ];
 }
