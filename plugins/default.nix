@@ -4,7 +4,6 @@
     ./none-ls.nix
     ./schemastore.nix
     ./telescope.nix
-    ./treesitter.nix
 
     ./completions
     ./editor
