@@ -13,7 +13,6 @@
     ./options.nix
     ./schemastore.nix
     ./telescope.nix
-    ./toggleterm.nix
     ./treesitter.nix
 
     ./git
